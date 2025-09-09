@@ -16,7 +16,7 @@ Key features:
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.12+
 - Libraries:
   - TensorFlow (`tensorflow>=2.10`)
   - Transformers (`transformers`)
@@ -37,9 +37,8 @@ pip install tensorflow transformers sentence-transformers pandas numpy matplotli
 
 The dataset consists of CSV files (`train.csv`, `val.csv`, `test.csv`) and corresponding images, structured as follows:
 
-- **CSV Files**: Located in `/content/drive/MyDrive/{train,val,test}/`
+- **CSV Files**:
   - Columns: `sentence`, `image_name`, `image_caption`, `label` (1 for correct sentence-image match, 0 otherwise).
-- **Images**: Stored in `/content/drive/MyDrive/{train,val,test}/images/`
 - **Structure**: Each sentence has exactly three rows, with one correct label (`label=1`) and two incorrect (`label=0`).
 
 Ensure the dataset is accessible (e.g., mounted on Google Drive for Colab) or adjust paths accordingly.
